@@ -4,6 +4,12 @@ from io import StringIO
 
 import streamlit as st
 
+
+st.set_page_config(
+    page_title="Dentons of Dudley",
+)
+
+
 # Replace this with your Google Sheet ID
 sheet_id = st.secrets["sheet_id"]
 
