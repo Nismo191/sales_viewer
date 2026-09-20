@@ -33,7 +33,7 @@ df = df.rename(columns=lambda x: x.strip())
 
 df.replace({r'[^\x00-\x7F\u00A3]+':''}, regex=True, inplace=True)
 
-df = df.drop(columns=['Item number', 'Payout AD', 'Payout NS', 'Payout JP', 'Payout MP', 'Due to NS', 'Due to JP', 'Due to MP'], axis=1)
+df = df.drop(columns=['Item number', 'Payout AD', 'Payout NS', 'Payout JP', 'Payout MP', 'Due to NS', 'Due to JP', 'Due to MP'])
 
 st.title("Dentons of Dudley")
 
